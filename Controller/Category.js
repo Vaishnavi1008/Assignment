@@ -1,4 +1,4 @@
-const connection = require('../DatabaseConnection')
+const connection = require('../Config/DatabaseConnection')
 
 
 const CategoryInsertUpdate =  async(req,res) => {

@@ -1,4 +1,4 @@
-const connection = require('../DatabaseConnection')
+const connection = require('../Config/DatabaseConnection')
 const jwt = require('jsonwebtoken');
 const bcrypt=require('bcrypt');
 const LoginInsert =  async(req,res) => {
