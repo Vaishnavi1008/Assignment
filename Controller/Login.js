@@ -67,7 +67,7 @@ const LoginGetByEmail =  async(req,res) => {
         }
         
    console.log(results)
-    const token = jwt.sign({ id: user.ID, email: user.Email,role:user.role }, 'secretKey', {
+    const token = jwt.sign({ id: user.ID, email: user.Email,role:user.role }, process.env.AccessToken_SecretKey, {
         expiresIn: '1h', // Token expires in 1 hour
     });
   

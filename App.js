@@ -9,4 +9,4 @@ app.use(cookieParser());
  app.use('/api',categoryRouter) //calling router
  app.use('/api',productRouter) 
  app.use('/api',Login) 
-app.listen('5000',()=> console.log('res'))
+app.listen(process.env.PORT,()=> console.log('res'))
